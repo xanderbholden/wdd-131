@@ -1,102 +1,104 @@
 :root {
-    /* Color Palette */
-    --primary-color: #0e103d; /* Dark Blue */
-    --secondary-color: #69306d; /* Purple */
-    --accent1-color: #a5668b; /* Mauve */
-    --accent2-color: white; /* White */
-  
-    /* Typography */
-    --heading-font: 'IM Fell French Canon SC', serif;
-    --paragraph-font: 'Lato', Helvetica, sans-serif;
-  
-    /* Headline Colors */
-    --headline-color-on-white: var(--primary-color); /* Dark Blue */
-    --headline-color-on-color: white; /* White */
-  
-    /* Paragraph Colors */
-    --paragraph-color-on-white: var(--primary-color); /* Dark Blue */
-    --paragraph-color-on-color: white; /* White */
-    --paragraph-background-color: var(--primary-color); /* Dark Blue */
- 
-  
-  /* General Styles */
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4em;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  hr {
-    height: 3px;
-    margin: 35px 0;
-    background: var(--accent1-color);
-  }
-  
-  header {
-    padding: 1em;
-    text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
-  }
-  
-  header > h1, header > h2 {
-    color: var(--headline-color-on-color);
-  }
-  
-  /* Color Blocks */
-  .colors {
-    width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
-  }
-  
-  .colors th {
-    background-color: #999;
-  }
-  
-  .colors td {
-    width: 25%;
-    height: 3em;
-  }
-  
-  .primary {
-    background-color: var(--primary-color);
-  }
-  
-  .secondary {
-    background-color: var(--secondary-color);
-  }
-  .accent1 {
-    background-color: var(--accent1-color);
-  }
-  .accent2{
-    background-color: var(--accent2-color);
-  }
+  /* Color Palette */
+  --primary-color: #0e103d; /* Dark Blue */
+  --secondary-color: #69306d; /* Purple */
+  --accent1-color: #a5668b; /* Mauve */
+  --accent2-color: white; /* White */
 
-  footer {
-    background-color:var(--primary-color);
-    color: white;
-    text-align: center;
-    margin-top: 3rem;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-  }
+  /* Typography */
+  --heading-font: 'IM Fell French Canon SC', serif;
+  --paragraph-font: 'Lato', Helvetica, sans-serif;
+
+  /* Headline Colors */
+  --headline-color-on-white: var(--primary-color); /* Dark Blue */
+  --headline-color-on-color: white; /* White */
+
+  /* Paragraph Colors */
+  --paragraph-color-on-white: var(--primary-color); /* Dark Blue */
+  --paragraph-color-on-color: white; /* White */
+  --paragraph-background-color: var(--primary-color); /* Dark Blue */
+}
+
+/* General Styles */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+/* Color Blocks */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
