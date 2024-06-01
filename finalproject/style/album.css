@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #0e103d; /* Dark Blue */
+    --secondary-color: #69306d; /* Purple */
+    --accent1-color: #a5668b; /* Mauve */
+    --accent2-color: white; /* White */
+}
+
+@media screen and (min-width: 700px) {
+    .topnav a.icon {
+        display: none;
+    }
+
+    #home {
+        text-align: left;
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: var(--secondary-color);
+    }
+
+    #temple-figures {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    header {
+        display: flex;
+        background-color: var(--accent2-color);
+    }
+
+    header h1 {
+        flex: 1;
+        color: var(--primary-color);
+    }
+
+    .topnav #menu {
+        display: flex;
+        text-align: center;
+        padding: 1.5rem;
+        text-decoration: none;
+        justify-content: space-between;
+        padding-left: 4rem;
+        float: right;
+        flex: 1;
+        background-color: var(--accent1-color);
+        color: var(--accent2-color);
+    }
+
+    #menu {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: var(--accent1-color);
+        color: var(--accent2-color);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #temple-figures {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
