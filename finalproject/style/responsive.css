@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #0e103d; /* Dark Blue */
+    --secondary-color: #69306d; /* Purple */
+    --accent1-color: #a5668b; /* Mauve */
+    --accent2-color: white; /* White */
+    --background-color: #0b2642; /* Dark Background */
+    --footer-color: #565653; /* Footer Background */
+
+    /* Typography */
+    --heading-font: 'Inconsolata', monospace; /* New heading font */
+    --paragraph-font: 'Josefin Sans', sans-serif; /* New paragraph font */
+
+    /* Headline Colors */
+    --headline-color-on-white: var(--primary-color); /* Dark Blue */
+    --headline-color-on-color: white; /* White */
+}
+
+body {
+    background-color: white;
+    color: var(--background-color);
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    width: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.topnav a.icon {
+    background: var(--secondary-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#menu a:hover,
+.topnav ul li a:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+#home {
+    text-align: left;
+    font-size: 6vw;
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+    .topnav a:not(.icon) {
+        display: block;
+    }
+
+    .topnav a.icon {
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive #menu {
+        display: block;
+        position: relative;
+        width: auto;
+        text-align: center;
+        background-color: var(--accent1-color); /* Mauve */
+    }
+
+    .topnav.responsive #menu li {
+        display: block;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    main {
+        flex-direction: column; /* Switch to column layout for smaller screens */
+    }
+
+    .image-column,
+    .content-column {
+        padding: 20px; /* Add padding to both columns */
+    }
+}

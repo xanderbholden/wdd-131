@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Contact page for Family - Virtual Album">
+    <meta name="author" content="Alexander Holden">
+    <link rel="stylesheet" href="style/contact.css">
+    <script src="scripts/contact.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header class="topnav">
+        <h1 id="home">Contact Us</h1>
+        <nav class="navigation">
+            <ul id="menu">
+                <li><a href="homepage.html" data-option="home">Home</a></li>
+                <li><a href="album.html" data-option="album">Album</a></li>
+                <li><a href="siteplan.html" data-option="siteplan">Siteplan</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <img id="heroImage" src="images/IMG_1099.JPG" alt="Family Photo" class="hero-image">
+
+    <main>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🏎️ Xander B Holden 🚗 Utah, USA</p>
+        <p id="lastModified">Last modified: <span id="lastModi

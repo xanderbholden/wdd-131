@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Homepage for My Family - Virtual Album">
+    <meta name="author" content="Alexander Holden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/homepage.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header class="topnav">
+        <h1 id="home">Home</h1>
+        <nav class="navigation">
+            <ul id="menu">
+                <li><a href="album.html" data-option="album">Albums</a></li>
+                <li><a href="contact.html" data-option="contact">Contact</a></li>
+                <li><a href="siteplan.html" data-option="siteplan">Siteplan</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image-column">
+            <img id="heroImage" src="images/IMG_1940.JPG" alt="Family Photo" class="hero-image">
+        </div>
+        <div class="content-column">
+            <div class="intro-box">
+                <h2>Welcome to Our Family</h2>
+                <p>We are a family of four, capturing and preserving our memories through this virtual album. Join us on our journey as we document our past adventures and look forward to exciting future experiences.</p>
+                <ul class="future-adventures">
+                    <li>Family road trip to the Grand Canyon</li>
+                    <li>Beach vacation in Hawaii</li>
+                    <li>Hiking expedition in the Rocky Mountains</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🏎️ Xander B Holden 🚗 Utah, USA</p>
+        <p id="lastModified">Last modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+</body>
+</html>
