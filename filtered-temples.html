@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Alexander Holden -- Learning about responsive web pages.">
+    <meta name="author" content="Alexander Holden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" >
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header class="topnav">
+        <h1 id="home">My Favorite Temples </h1>
+        <nav class="navigation">
+            <ul id="menu">
+                <li><a href="#" data-option="home">Home</a></li>
+                <li><a href="#" data-option="old">Old</a></li>
+                <li><a href="#" data-option="new">New</a></li>
+                <li><a href="#" data-option="large">Large</a></li>
+                <li><a href="#" data-option="small">Small</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 >Home</h2>
+        <div id="temple-figures" class="res-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span>  🏎️ Xander B Holden 🚗 Utah, USA</p>
+        <p id="lastModified">Last modified: <span id="lastModifiedDate"></span></p>
+      </footer>
+    </body>
+    </html>

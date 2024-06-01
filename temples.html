@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Alexander Holden -- Learning about responsive web pages.">
+    <meta name="author" content="Alexander Holden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" >
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header class="topnav">
+        <h1 id="home">My Favorite Temples </h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="https://xanderbholden.github.io/wdd131/">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2 id="selectedContent">Home</h2>
+        <div id="templeElements">
+            <figure>
+                <img src="images/payson_temple.jpeg" alt="Payson, Utah, USA">
+                <figcaption>Payson, Utah, USA</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/saint_george.jpeg" alt="Saint Goerge, Utah, USA">
+                <figcaption>Saint Goerge, Utah, USA</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/saltlake.jpeg" alt="Salt Lake City, Utah USA">
+                <figcaption>Salt Lake City, Utah USA</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/washington_dc_temple.jpeg" alt="Washington DC, Vermont USA">
+                <figcaption>Washington DC, Vermont USA</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/los_angeles_temple.jpeg" alt="Los Angeles, California USA">
+                <figcaption>Los Angeles, California USA</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/panama_city.jpeg" alt="Panama City, Panama">
+                <figcaption>Panama City, Panama</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/san_diego.jpeg" alt="San Diego, California USA">
+                <figcaption>San Diego, California USA</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/rome_italy.jpeg" alt="Rome, Italy">
+                <figcaption>Rome, Italy</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/bangkok_thailand.jpeg" alt="Bangkok, Thailand">
+                <figcaption>Bangkok, Thailand</figcaption>
+            </figure>
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Xander Holden - Utah, USA
+        </p>
+        <p id="lastModified" class="colored"></p>
+    </footer>
+</body>
+</html>

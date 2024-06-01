@@ -1,0 +1,52 @@
+@media screen and (min-width: 700px) {
+    .topnav a.icon {
+        display: none;
+    }
+
+    #home {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #temple-figures {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header h1 {
+        flex: 1;
+    }
+
+    .topnav #menu {
+        display: flex;
+        text-align: center;
+        padding: 1.5rem;
+        text-decoration: none;
+        justify-content: space-between;
+        padding-left: 4rem;
+        float: right;
+        flex: 1;
+    }
+
+    #menu {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #temple-figures {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

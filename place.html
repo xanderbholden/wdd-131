@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Xander Holden">
+    <meta name="description" content="Xander Holden - Country page.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Japan 🇯🇵</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 740px)" srcset="images/japan_large2.webp">
+                <source media="(min-width: 500px)" srcset="images/japan_small_car.webp">
+                <img src="images/mt_fuji.webp" alt="Mt Fuji" width="500" height="250">
+            </picture>
+        </div>
+        <article class="data-card">
+            <h2>Data</h2>
+            <div class="card-details">
+                <div class="data-item">
+                    <div class="label">Area:</div>
+                    <div class="value">377,975.24 km2&sup2;</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Population:</div>
+                    <div class="value">123 Million</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Capital:</div>
+                    <div class="value">Tokyo</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Currency:</div>
+                    <div class="value">Yen</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Language:</div>
+                    <div class="value">Japonese</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Time Zone:</div>
+                    <div class="value">UTC+09:00</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Flower:</div>
+                    <div class="value">Cherry blossoms</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Tree: </div>
+                    <div class="value">Japanese cedar</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Bird</div>
+                    <div class="value">Green pheasant</div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="weather-card">
+            <h2>Weather</h2>
+            <img src="images/day copy.svg" alt="Wheater ">
+            <div class="card-details">
+                <div class="data-item">
+                    <div class="label">Temperature:</div>
+                    <div class="value"><span id="temp"></span></div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Conditions:</div>
+                    <div class="value">Clear</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Wind:</div>
+                    <div class="value"><span id="wind"></span></div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Wind Chill:</div>
+                    <div class="value"><span id="windchill"></span></div>
+                </div>
+            </div>          
+        </article>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>  🏎️ Xander B Holden 🚗 Tokyo, Japan</p>
+        <p id="lastModified">Last modified: <span id="lastModifiedDate"></span></p>
+      </footer>
+    
+    </body>
+    </html>
