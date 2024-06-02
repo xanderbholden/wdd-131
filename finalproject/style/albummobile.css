@@ -48,9 +48,17 @@
         padding: 20px;
     }
 
-    .image-column,
-    .content-column {
-        padding: 20px;
+    .res-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Only one column */
+        grid-gap: 20px;
+        justify-items: center;
+    }
+
+    .res-grid img {
+        max-width: 300px; /* Restricting maximum width */
+        padding: 10px; /* Adding padding */
+        background-color: white; /* White padding around the images */
     }
 
     #menu {

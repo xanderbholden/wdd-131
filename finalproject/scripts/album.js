@@ -1,22 +1,22 @@
-function showContent(content) {
-    document.getElementById('selectedContent').textContent = content;
+function toggleMenu() {
+    const topnav = document.querySelector('.topnav');
+    topnav.classList.toggle('responsive');
 }
 
-function myFunction() {
-    var x = document.getElementById("menu");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-}
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.navigation ul li a');
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (event) {
-            event.preventDefault();
             const selectedOption = event.target.getAttribute('data-option');
+
+            // Check if the link is for navigation (home, contact, siteplan)
+            if (selectedOption === 'home' || selectedOption === 'album' || selectedOption === 'siteplan') {
+                return; // Allow the default action (navigation) to occur
+            }
+
+            // Prevent default action for filtering links
+            event.preventDefault();
             displayTempleCards(selectedOption);
             toggleActive(link);
         });
@@ -24,6 +24,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
     displayTempleCards('home');
 });
+
+function displayTempleCards(option) {
+    const container = document.getElementById('temple-figures');
+    container.innerHTML = '';
+
+    let filteredTemples = temples;
+
+    switch (option) {
+        case '2020':
+            filteredTemples = temples.filter(temple => temple.dedicated.includes('2020'));
+            break;
+        case '2021':
+            filteredTemples = temples.filter(temple => temple.dedicated.includes('2021'));
+            break;
+        case '2022':
+            filteredTemples = temples.filter(temple => temple.dedicated.includes('2022'));
+            break;
+        case '2023':
+            filteredTemples = temples.filter(temple => temple.dedicated.includes('2023'));
+            break;
+        case 'home':
+        default:
+            filteredTemples = temples;
+            break;
+    }
+
+    filteredTemples.forEach(temple => {
+        const templeCard = document.createElement('div');
+        templeCard.className = 'temple-card';
+
+        templeCard.innerHTML = `
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Date: ${temple.dedicated}</p>
+            <p class="space"> </p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        `;
+
+        container.appendChild(templeCard);
+    });
+}
+
+function toggleActive(element) {
+    const navLinks = document.querySelectorAll('.navigation ul li a');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    element.classList.add('active');
+}
 
 
 const temples = [
@@ -100,7 +149,7 @@ const temples = [
         alt: "Rexburg Idaho Temple",
     },
     {
-        templeName: "A Friend's Wedding",
+        templeName: "Friend's Wedding",
         location: "Pleasant Grove, Utah",
         dedicated: "2023 August 23rd",
         area: 37500,
@@ -108,59 +157,3 @@ const temples = [
     }
 ];
 
-
-function displayTempleCards(option) {
-    const container = document.getElementById('temple-figures');
-    container.innerHTML = '';
-
-    let filteredTemples = temples;
-
-    switch (option) {
-        case 'old':
-            filteredTemples = temples.filter(temple => {
-                const dedicationYear = parseInt(temple.dedicated.split(',')[0]); // Extract the year from the dedication string
-                return dedicationYear < 2000;
-            });
-            break;
-        case 'new':
-            filteredTemples = temples.filter(temple => {
-                const dedicationYear = parseInt(temple.dedicated.split(',')[0]); // Extract the year from the dedication string
-                return dedicationYear >= 2000;
-            });
-            break;
-        case 'large':
-            filteredTemples = temples.filter(temple => temple.area >= 9999);
-            break;
-        case 'small':
-            filteredTemples = temples.filter(temple => temple.area < 10000);
-            break;
-        case 'home':
-        default:
-            filteredTemples = temples;
-            break;
-    }
-
-    filteredTemples.forEach(temple => {
-        const templeCard = document.createElement('div');
-        templeCard.className = 'temple-card';
-
-        templeCard.innerHTML = `
-            <h3>${temple.templeName}</h3>
-            <p>Location: ${temple.location}</p>
-            <p>Date: ${temple.dedicated}</p>
-           
-            <p class="space"> </p>
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-        `;
-
-        container.appendChild(templeCard);
-    });
-}
-
-function toggleActive(element) {
-    const navLinks = document.querySelectorAll('.navigation ul li a');
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-    });
-    element.classList.add('active');
-}
