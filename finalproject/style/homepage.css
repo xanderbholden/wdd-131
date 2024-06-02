@@ -9,7 +9,7 @@
     /* Typography */
     --heading-font: 'IM Fell French Canon SC', serif;
     --paragraph-font: 'Lato', Helvetica, sans-serif;
-
+    
     /* Headline Colors */
     --headline-color-on-white: var(--primary-color); /* Dark Blue */
     --headline-color-on-color: white; /* White */

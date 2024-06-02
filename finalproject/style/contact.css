@@ -3,11 +3,11 @@
     --secondary-color: #69306d; /* Purple */
     --accent1-color: #a5668b; /* Mauve */
     --accent2-color: white; /* White */
-  
+
     /* Typography */
     --heading-font: 'IM Fell French Canon SC', serif;
     --paragraph-font: 'Lato', Helvetica, sans-serif;
-  
+    
     /* Headline Colors */
     --headline-color-on-white: var(--primary-color); /* Dark Blue */
     --headline-color-on-color: white; /* White */
@@ -29,7 +29,7 @@ body {
 .topnav h1 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
-    text-align: center;
+    text-align:left;
     padding: 1rem;
     margin: 0;
 }

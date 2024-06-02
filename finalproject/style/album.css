@@ -5,6 +5,129 @@
     --accent2-color: white; /* White */
 }
 
+body {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    color: #0e103d;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    position: relative;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+.topnav ul {
+    list-style: none;
+}
+
+.topnav .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav a,
+.topnav h1 {
+    color: var(--accent2-color);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    text-align: left;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.topnav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+#home {
+    text-align: left;
+    font-size: 6vw;
+    font-family: 'Roboto', sans-serif;
+    color: var(--accent2-color);
+}
+
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--accent2-color);
+    font-family: 'Times New Roman', sans-serif;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#menu a {
+    padding: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+    background-color: var(--accent2-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.temple-card img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (min-width: 700px) {
     .topnav a.icon {
         display: none;
@@ -13,7 +136,6 @@
     #home {
         text-align: left;
         font-size: 3rem;
-        color: var(--primary-color);
     }
 
     h2 {
@@ -31,12 +153,14 @@
 
     header {
         display: flex;
-        background-color: var(--accent2-color);
     }
 
     header h1 {
         flex: 1;
-        color: var(--primary-color);
+    }
+
+    .topnav .navigation {
+        justify-content: space-between;
     }
 
     .topnav #menu {
@@ -48,15 +172,6 @@
         padding-left: 4rem;
         float: right;
         flex: 1;
-        background-color: var(--accent1-color);
-        color: var(--accent2-color);
-    }
-
-    #menu {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        background-color: var(--accent1-color);
-        color: var(--accent2-color);
     }
 }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family Album</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Alexander Holden --.">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Alexander Holden --">
     <meta name="author" content="Alexander Holden">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +15,29 @@
     <script src="scripts/album.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
     <header class="topnav">
         <h1 id="home">Family Album</h1>
         <nav class="navigation">
-            <ul id="menu">
-                <li><a href="#" data-option="home">Home</a></li>
-                <li><a href="#" data-option="old">2020</a></li>
-                <li><a href="#" data-option="new">2021</a></li>
-                <li><a href="#" data-option="large">2022</a></li>
-                <li><a href="#" data-option="small">2023</a></li>
+            <ul>
+                <li><a href="index.html" data-option="home">Home</a></li>
+                <li><a href="contact.html" data-option="contact">Contact</a></li>
+                <li><a href="siteplan.html" data-option="siteplan">Site Plan</a></li>
             </ul>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
     </header>
 
     <main>
-        <h2>Home</h2>
-        <div id="temple-figures" class="res-grid"></div>
+        <aside>
+            <a href="#" data-option="2020">-2020</a>
+            <a href="#" data-option="2021">2021</a>
+            <a href="#" data-option="2022">2022</a>
+            <a href="#" data-option="2023">2023+</a>
+        </aside>
+        <section id="temple-figures" class="res-grid"></section>
     </main>
 
     <footer>
