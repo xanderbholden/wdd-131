@@ -12,10 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Check if the link is for navigation (home, contact, siteplan)
             if (selectedOption === 'home' || selectedOption === 'album' || selectedOption === 'siteplan') {
-                return; // Allow the default action (navigation) to occur
+                return; 
             }
 
-            // Prevent default action for filtering links
             event.preventDefault();
             displayTempleCards(selectedOption);
             toggleActive(link);
@@ -79,80 +78,73 @@ const temples = [
     {
         templeName: "Hill AirForce Base Musemum",
         location: "Clearfield, Utah",
-        dedicated: "2016, July, 7th",
-        area: 11500,
+        dedicated: "2018, July, 7th",
         imageUrl: "images/F-15-eagle(2).jpg"
     },
     {
         templeName: "Hill AirForce Base Musemum",
         location: "Clearfield, Utah",
         dedicated: "2016, July, 7th",
-        area: 74792,
         imageUrl: "images/f15-eagle2(1).jpg"
     },
     {
         templeName: "Shark Bate Ooo HA HA ",
         location: "Living Planet Aquarium",
         dedicated: "2018, June, 20",
-        area: 96630,
         imageUrl: "images/shark.jpg"
     },
     {
         templeName: "4th of July and Sparklers",
         location: "Clearfield, Utah",
         dedicated: "2019, July, 4th",
-        area: 6861,
         imageUrl: "images/4thofjuly.jpg"
     },
     {
         templeName: "2nd Child incoming!",
         location: "Spanish Fork, Utah",
         dedicated: "2020, Sep, 16th",
-        area: 156558,
         imageUrl: "images/itsaboy2.jpg"
     },
     {
         templeName: "Disneyland Vacation (Rockets)",
         location: "Anehiem, California",
         dedicated: "2021, November, 16th",
-        area: 9600,
         imageUrl: "images/rocketdisney.jpg"
     },
     {
         templeName: "Disneyland's Merriest Nights!",
         location: "Anehiem, California",
         dedicated: "2021, November, 16th",
-        area: 116642,
         imageUrl: "images/christmasdisney2.jpg"
     },
     {
         templeName: "Merriest Night's party",
         location: "Anehiem, California",
         dedicated: "2021, November, 16th",
-        area: 54000,
         imageUrl: "images/Disneyposterchristmas.jpg"
     },
     {
         templeName: "Got to see Princess Jasmine!",
         location: "Anehiem, California",
         dedicated: "2023, June 3rd",
-        area: 40000,
         imageUrl: "images/jasmine.jpg"
     },
     {
         templeName: "Sophie hanging with Goofy!",
         location: "Anehiem, California",
         dedicated: "2023, June 4rth",
-        area: 57000,
-        imageUrl:
-            "images/sophieGoofy.jpg",
-        alt: "Rexburg Idaho Temple",
+        imageUrl: "images/sophieGoofy.jpg",
+    },
+    {
+        templeName: "Sophie hanging with Goofy!",
+        location: "Anehiem, California",
+        dedicated: "2023, June 4rth",
+        imageUrl: "images/IMG_1935.JPG",
     },
     {
         templeName: "Friend's Wedding",
         location: "Pleasant Grove, Utah",
         dedicated: "2023 August 23rd",
-        area: 37500,
         imageUrl: "images/family-wedding.jpg"
     }
 ];
