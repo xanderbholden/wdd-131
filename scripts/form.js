@@ -27,39 +27,6 @@ function addProductOptions(){
 
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const reviewCountElement = document.getElementById('reviewCount');
-//     const reviewForm = document.getElementById('reviewForm');
 
-//     let reviewCount = localStorage.getItem('reviewCount') || 0;
 
-//     if (reviewCountElement) {
-//         reviewCountElement.textContent = reviewCount;
-//     }
-
-//     if (reviewForm) {
-//         reviewForm.addEventListener('submit', (event) => {
-//             event.preventDefault(); 
-
-//             reviewCount++;
-            
-//             localStorage.setItem('reviewCount', reviewCount);
-
-//             if (reviewCountElement) {
-//                 reviewCountElement.textContent = reviewCount;
-//             }
-
-//             window.location.href = 'review.html';
-//         });
-//     }
-// });
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Set footer copyright year
-    const currentYear = new Date().getFullYear();
-    console.log(currentYear);
-    document.getElementById('currentyear').innerText = currentYear;
-    
-    // Set footer last modified date
-    document.getElementById('lastModified').innerText = document.lastModified;
-});
+   
